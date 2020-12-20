@@ -34,11 +34,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 var PORT = process.env.PORT || 8000;
-
+console.log(PORT)
 // Requiring our models for syncing
 var db = require("./models");
 
-
+console.log('hi')
 // Static directory
 app.use(express.static("public"));
 
@@ -51,7 +51,6 @@ app.use("/profile", require("./routes/profile-routes.js"));
 
 // connect to jawsdb here--may need to tweek this a bit to connect our db
 mongoose.connect(keys.mongo.dbURI, { useNewUrlParser: true });
-PORT   
 
 app.get("/", (req, res) => {
     res.render("login", { user: req.user });
