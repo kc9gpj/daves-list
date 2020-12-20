@@ -34,11 +34,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 var PORT = process.env.PORT || 8000;
-console.log(PORT)
+
 // Requiring our models for syncing
 var db = require("./models");
 
-console.log('hi')
 // Static directory
 app.use(express.static("public"));
 
