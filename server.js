@@ -51,8 +51,7 @@ app.use("/profile", require("./routes/profile-routes.js"));
 
 // connect to jawsdb here--may need to tweek this a bit to connect our db
 mongoose.connect(keys.mongo.dbURI, { useNewUrlParser: true });
-     
-
+PORT   
 
 app.get("/", (req, res) => {
     res.render("login", { user: req.user });
