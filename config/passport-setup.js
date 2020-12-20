@@ -17,7 +17,7 @@ passport.use(
     new GoogleStrategy({
         clientID: keys.google.clientID,
         clientSecret: keys.google.clientSecret,
-        callbackURL: "https://reginalds-nest.herokuapp.com/home"
+        callbackURL: "https://daves-list.herokuapp.com//home"
     }, (accessToken, refreshToken, profile, done) => {
         console.log("tokens", accessToken, refreshToken);
         //  check if user already exists in our db
