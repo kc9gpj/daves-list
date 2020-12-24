@@ -1,6 +1,6 @@
 body{
   background-color: #8f8f8f; 
-  background-image: linear-gradient(to bottom right, lightblue, green); 
+  background-image: linear-gradient(to bottom right, rgb(1, 69, 92), rgb(87, 6, 141)); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body{
 .jumbotron {
   float: none;
   text-align: center;
-  background-color: #fcf2bd;
+  background-color: lightgray;
   padding-bottom: 20px;
   padding-top: 0;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
