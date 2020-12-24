@@ -85,9 +85,9 @@ app.use(bodyParser.json());
   
   var mailOptions = {
     from: 'hotrest123@gmail.com',
-    to: 'david.p.hoffmann1@gmail.com',
-    subject: 'R Nest Contact Us Message',
-    text: 'You have a new R Nest contact us message below:',
+    to: 'dave@dhoff.net',
+    subject: 'daveslist Contact Us Message',
+    text: 'You have a new daveslist contact us message below:',
     html: output 
   
   };
