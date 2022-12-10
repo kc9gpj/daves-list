@@ -1,5 +1,5 @@
 // *****************************************************************************
-// Server.js - This file is the initial starting point for the Node/Express server.
+//index.js - This file is the initial starting point for the Node/Express server.
 //
 // ******************************************************************************
 // *** Dependencies
@@ -33,7 +33,7 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-var PORT = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 // Requiring our models for syncing
 var db = require("./models");
