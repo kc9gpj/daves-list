@@ -29,7 +29,7 @@ app.use(cookieSession({
     keys: [keys.session.cookieKey]
 }));
 
-// // initialize passport
+// initialize passport
 // app.use(passport.initialize());
 // app.use(passport.session());
 
