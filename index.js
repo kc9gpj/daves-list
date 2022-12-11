@@ -33,7 +33,7 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-var port = 3000;
+const port = process.env.PORT || 3000;
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -58,8 +58,8 @@ app.get("/", (req, res) => {
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync().then(function () {
-  app.listen(3000, function () {
-    console.log("App listening on PORT " + 3000);
+  app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
   });
 });
 
