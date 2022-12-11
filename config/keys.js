@@ -1,13 +1,5 @@
 module.exports = {
-    google: {
-        clientID: process.env.clientID,
-        clientSecret: process.env.clientSecret
-    },
     mongo: {
-        dbURI: process.env.dbURI
-    },
-    session: {
-        cookieKey: process.env.cookieKey
-
+        dbURI: "mongodb+srv://daveslist:daveslist123@cluster0.3yl9h.mongodb.net/?retryWrites=true&w=majority"
     }
 };

@@ -24,10 +24,10 @@ app.use(bodyParser.json());
 
 
 app.set("view engine","html");
-app.use(cookieSession({
-    maxAge: 24 * 60 * 60 * 1000,
-    keys: [keys.session.cookieKey]
-}));
+// app.use(cookieSession({
+//     maxAge: 24 * 60 * 60 * 1000,
+//     keys: [keys.session.cookieKey]
+// }));
 
 // initialize passport
 // app.use(passport.initialize());
