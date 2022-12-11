@@ -12,6 +12,9 @@
     "path": false,
     "os": false
   },
+  "engines": {
+    "node": "16.x"
+  },
   "license": "ISC",
   "dependencies": {
     "array-flatten": "^3.0.0",
